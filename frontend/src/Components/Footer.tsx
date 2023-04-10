@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
+import CookieConsent from "react-cookie-consent";
 
 function Copyright() {
   return (
@@ -37,6 +38,9 @@ export default function Footer(props: FooterProps) {
           color="text.secondary"
           component="p"
         >
+          <CookieConsent>
+            This website uses cookies to enhance the user experience.
+          </CookieConsent>
           {description}
         </Typography>
         <Copyright />
