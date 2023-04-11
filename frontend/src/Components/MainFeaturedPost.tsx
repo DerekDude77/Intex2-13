@@ -22,16 +22,6 @@ export default function MainFeaturedPost(props: MainFeaturedPostProps) {
 
   return (
     <Paper
-      // sx={{
-      //   position: "relative",
-      //   backgroundColor: "grey.800",
-      //   color: "#fff",
-      //   mb: 4,
-      //   backgroundSize: "cover",
-      //   backgroundRepeat: "no-repeat",
-      //   backgroundPosition: "center",
-      //   backgroundImage: `url(${post.image})`,
-      // }}
       sx={{
         position: "relative",
         backgroundColor: theme.palette.grey[800],
@@ -65,11 +55,6 @@ export default function MainFeaturedPost(props: MainFeaturedPostProps) {
       <Grid container>
         <Grid item md={6}>
           <Box
-            // sx={{
-            //   position: "relative",
-            //   p: { xs: 3, md: 6 },
-            //   pr: { md: 0 },
-            // }}
             sx={{
               position: "absolute",
               bottom: 0,
@@ -77,6 +62,10 @@ export default function MainFeaturedPost(props: MainFeaturedPostProps) {
               width: "100%",
               height: "95%", // Set the height of the Grid container to 50%
               backgroundColor: "rgba(0, 0, 0, 0.2)", // Set a black background with 70% opacity
+              display: "flex", // Add display flex
+              flexDirection: "column", // Add flex direction
+              alignItems: "center", // Add align items
+              justifyContent: "flex-start", // Add justify content
             }}
           >
             <Typography

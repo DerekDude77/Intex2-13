@@ -7,7 +7,82 @@ import Container from "@mui/material/Container";
 import Header from "./Components/Header";
 import Blog from "./Blog";
 import BurialSummary from "./BurialSummary";
-const theme = createTheme();
+const theme = createTheme({
+  palette: {
+    background: {
+      default: "#3d424b",
+    },
+    text: {
+      primary: "#f5f5f5",
+    },
+  },
+  typography: {
+    fontFamily: "Adler",
+    h4: {
+      fontWeight: 600,
+      fontSize: "2rem",
+    },
+    h5: {
+      fontWeight: 600,
+      fontSize: "1.5rem",
+    },
+    body1: {
+      fontSize: "1.1rem",
+    },
+    body2: {
+      fontSize: "1rem",
+    },
+  },
+  components: {
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          textTransform: "none",
+        },
+      },
+    },
+    MuiPaper: {
+      styleOverrides: {
+        root: {
+          fontFamily: "Adler",
+          padding: "1rem",
+          backgroundColor: "#2c3139",
+          borderRadius: "8px",
+          boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+        },
+      },
+    },
+    MuiLink: {
+      styleOverrides: {
+        root: {
+          fontFamily: "Adler",
+          "&:hover": {
+            textDecoration: "none",
+          },
+        },
+      },
+    },
+    MuiCard: {
+      styleOverrides: {
+        root: {
+          transition: "0.3s",
+          fontFamily: "Adler",
+          "&:hover": {
+            transform: "scale(1.02)",
+          },
+        },
+      },
+    },
+    MuiListItemIcon: {
+      styleOverrides: {
+        root: {
+          minWidth: "auto",
+          marginRight: "0.5rem",
+        },
+      },
+    },
+  },
+});
 
 const sections = [
   { title: "Home Page", url: "/" },
