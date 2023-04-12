@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.52b8a005.css",
+    "main.js": "/static/js/main.be77c646.js",
+    "static/js/787.cda612ba.chunk.js": "/static/js/787.cda612ba.chunk.js",
+    "static/media/Sarcophagus.jpg": "/static/media/Sarcophagus.c0996e844a87a744a538.jpg",
+    "index.html": "/index.html",
+    "main.52b8a005.css.map": "/static/css/main.52b8a005.css.map",
+    "main.be77c646.js.map": "/static/js/main.be77c646.js.map",
+    "787.cda612ba.chunk.js.map": "/static/js/787.cda612ba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.52b8a005.css",
+    "static/js/main.be77c646.js"
+  ]
+}

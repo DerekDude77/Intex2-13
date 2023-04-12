@@ -1,3 +1,5 @@
+using Microsoft.Extensions.FileProviders;
+using System.IO;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Identity.Web;
@@ -30,3 +32,9 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+app.UseDefaultFiles();
+app.UseDefaultFiles(); // Enables default file mapping on the web root (e.g., index.html)
+app.UseStaticFiles(); // Enables serving static files from the wwwroot folder
+
+

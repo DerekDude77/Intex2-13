@@ -15,7 +15,7 @@ import Sarco from "./Sarcophagus.jpg";
 const mainFeaturedPost = {
   title: "Fag El-Gamous",
   description:
-    "Discover the mysteries of Fag El-Gamous, an ancient burial site unveiling the secrets of a forgotten civilization.",
+    "Discover the mysteries of Fag El-Gamous, an ancient burial site unveiling the secrets of a lost civilization.",
   image: Sarco,
   imageText: "Golden Sarcophagus",
   linkText: "",
