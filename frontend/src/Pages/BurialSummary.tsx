@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import teams from "./Data.json";
-import { PaginationComponent } from "./Components/Paginate";
+import teams from "../Data.json";
+import MyBody from "../Components/MyBody";
+import MyTable from "../Components/Table";
 
 const Teams = teams.teams;
 
@@ -42,44 +43,9 @@ const DataTable: React.FC = () => {
   };
 
   return (
-    <div>
-      <input
-        type="text"
-        value={searchQuery}
-        onChange={(e) => setSearchQuery(e.target.value)}
-      />
-
-      <table>
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Population</th>
-          </tr>
-        </thead>
-        <tbody>
-          {currentItems.map((item) => (
-            <tr key={item.tid}>
-              <td>{item.tid}</td>
-              <td>{item.name}</td>
-              <td>{item.pop}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-
-      <div>
-        {pageNumbers.map((pageNumber) => (
-          <button
-            key={pageNumber}
-            onClick={() => handlePaginationClick(pageNumber)}
-          >
-            {pageNumber}
-          </button>
-        ))}
-      </div>
-      {/* <PaginationComponent /> */}
-    </div>
+    <MyBody>
+      <MyTable />
+    </MyBody>
   );
 };
 
